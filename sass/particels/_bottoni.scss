@@ -1,26 +1,24 @@
-$colors: (
-	color1: #0e6cff,
-	color2: #ff8700,
-	color3: #4caf50,
-);
-
-@each $color, $value in $colors {
-	.my-#{$color} {
-		color: $value;
+@mixin generic-button {
+	display: inline-block;
+	padding: $padding-default;
+	border-radius: 15px;
+	transition: transform 0.3s;
+	margin: 3px;
+	&:hover {
+		transform: scale(0.98);
 	}
 }
 
-@mixin generic-button {
-	padding: 10px 20px;
-	border-radius: 15px;
-	box-shadow: 5px 5px 10px #000;
-}
+$buttonsColor: (
+	primary: $primary-color,
+	secondary: $secondary-color,
+	tartiary: $tertiary-color,
+);
 
-$buttons: "button1", "button2", "button3";
-
-@each $button in buttons {
-	.#{button} {
+@each $color, $value in $buttonsColor {
+	.button-#{$color} {
 		@include generic-button;
-		background-color: #{$button}-bg;
+		background-color: $value;
+		color: $light-color;
 	}
 }

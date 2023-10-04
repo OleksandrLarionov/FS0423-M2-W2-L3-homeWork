@@ -1,5 +1,18 @@
-@mixin titleBig {
-  font-size: 70px;
-  color: rgb(238, 197, 61);
-  margin: 20px ;
+@mixin title-big {
+	font-size: $font-size-xl;
+	font-weight: 900;
+	letter-spacing: -6px;
+	line-height: 0.95;
+	margin-bottom: 1rem;
+	color: darken($hero-color, 25);
+}
+
+@mixin floating(
+	$radius: 20px,
+	$shadow: 0 10px 20px rgb(0 0 0 /0.1),
+	$border: 1px solid transparent
+) {
+	border-radius: $radius;
+	box-shadow: $shadow;
+	border: $border;
 }

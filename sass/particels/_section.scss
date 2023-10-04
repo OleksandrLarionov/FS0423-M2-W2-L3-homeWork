@@ -1,0 +1,10 @@
+.box {
+	width: 250px;
+	height: 250px;
+}
+section {
+	display: flex;
+	& img {
+		width: 100%;
+	}
+}

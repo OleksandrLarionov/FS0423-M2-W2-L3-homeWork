@@ -1,17 +1,20 @@
 body,
-html{
-  margin: 0;
-  padding: 0;
+html {
+	margin: 0;
+	padding: 0;
 }
 
-ul,li{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
-
+a {
+	text-decoration: none;
+}
 button {
-  border: 0;
-  background: none;
-  padding: 0;
+	border: 0;
+	background: none;
+	padding: 0;
 }

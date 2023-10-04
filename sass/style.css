@@ -4,20 +4,21 @@ html {
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
   border: 0;
   background: none;
   padding: 0;
-}
-
-.hero {
-  background-color: #640fc5;
 }
 
 .ml-sm {
@@ -116,68 +117,218 @@ button {
   padding: 0 60px 0 60px;
 }
 
-.my-color1 {
-  color: #0e6cff;
-}
-
-.my-color2 {
-  color: #ff8700;
-}
-
-.my-color3 {
-  color: #4caf50;
-}
-
-.button {
-  padding: 10px 20px;
+.button-primary {
+  display: inline-block;
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: 5px 5px 10px #000;
-  background-color: buttons-bg;
+  transition: transform 0.3s;
+  margin: 3px;
+  background-color: #0e6cff;
+  color: #f4f4f4;
+}
+.button-primary:hover {
+  transform: scale(0.98);
 }
 
-nav {
+.button-secondary {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  margin: 3px;
+  background-color: #ff8700;
+  color: #f4f4f4;
+}
+.button-secondary:hover {
+  transform: scale(0.98);
+}
+
+.button-tartiary {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  margin: 3px;
+  background-color: #4caf50;
+  color: #f4f4f4;
+}
+.button-tartiary:hover {
+  transform: scale(0.98);
+}
+
+header {
+  background-color: #640fc5;
+  min-height: 600px;
+}
+header nav {
   display: flex;
   align-items: center;
-  background-color: #ff8700;
+  justify-content: space-between;
 }
-nav .logo {
+header nav .logo {
   width: 50px;
   height: 50px;
 }
-nav .logo img {
+header nav .logo img {
   width: 100%;
 }
-nav ul {
+header nav ul {
   display: flex;
+}
+header nav a {
+  color: #f4f4f4;
+}
+header nav a:hover {
+  color: #ff8700;
+}
+
+body {
+  color: #f4f4f4;
 }
 
 .hero {
-  background-color: brown;
+  background-color: #640fc5;
   display: flex;
+  margin-top: 30px;
+  height: 50vh;
 }
 .hero div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.hero div:nth-child(2) div {
-  display: flex;
+.hero div div:nth-child(4) {
   flex-direction: row;
-  justify-content: center;
+  display: flex;
+  justify-content: end;
 }
-.hero div img {
-  width: 100%;
+.hero img {
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.43);
+  border: 2px solid #b278f5;
+  animation-name: animate-from-top-ub62dxt;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 800ms;
+  width: 30%;
 }
-
-section {
+@keyframes animate-from-top-ub62dxt {
+  from {
+    opacity: 0;
+    translate: 0 100%;
+  }
+  to {
+    opacity: 1;
+    translate: 0 -20%;
+  }
+}
+.hero h1 {
+  font-size: 96px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+  color: #28064f;
+  animation-name: animate-from-top-ub62dys;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+@keyframes animate-from-top-ub62dys {
+  from {
+    opacity: 0;
+    translate: 0 -10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.hero p {
+  animation-name: animate-from-top-ub62dyx;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 600ms;
+  color: #cda8f8;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  padding-inline-end: 3rem;
+}
+@keyframes animate-from-top-ub62dyx {
+  from {
+    opacity: 0;
+    translate: 0 -10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.hero section {
   display: flex;
   justify-content: space-around;
 }
-section div img {
+.hero section div img {
   width: 100%;
+}
+.hero button:first-of-type {
+  animation-name: animate-from-top-ub62dza;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 800ms;
+}
+@keyframes animate-from-top-ub62dza {
+  from {
+    opacity: 0;
+    translate: 0 -10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.hero button:nth-of-type(2) {
+  animation-name: animate-from-top-ub62e01;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
+}
+@keyframes animate-from-top-ub62e01 {
+  from {
+    opacity: 0;
+    translate: 0 -10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.hero button:last-of-type {
+  animation-name: animate-from-top-ub62e02;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1000ms;
+}
+@keyframes animate-from-top-ub62e02 {
+  from {
+    opacity: 0;
+    translate: 0 -10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 
 .box {
   width: 250px;
   height: 250px;
+}
+
+section {
+  display: flex;
+}
+section img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
