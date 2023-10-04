@@ -24,13 +24,13 @@ body {
   background-color: #640fc5;
 }
 
-nav div button:first-child {
+.hero div button:first-child {
   background-color: #0e6cff;
 }
-nav div button:nth-child(2) {
+.hero div button:nth-child(2) {
   background-color: #ff8700;
 }
-nav div button:last-child {
+.hero div button:last-child {
   background-color: #4caf50;
 }
 
