@@ -8,16 +8,16 @@ $my-space: (
 );
 
 @each $element, $value in $my-space {
-	.margin-line-#{$element} {
+	.ml-#{$element} {
 		margin: 0 $value 0 $value;
 	}
-	.margin-line-#{$element} {
+	.mb-#{$element} {
 		margin: $value;
 	}
-	.padding-block-#{$element} {
+	.pb-#{$element} {
 		padding: $value;
 	}
-	.padding-line-#{$element} {
+	.pl-#{$element} {
 		padding: 0 $value 0 $value;
 	}
 }

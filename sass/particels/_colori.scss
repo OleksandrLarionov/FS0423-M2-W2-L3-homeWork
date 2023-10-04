@@ -1,22 +1,4 @@
-body {
-	color: #f4f4f4;
-}
+$generic-text: #f4f4f4;
 .hero {
 	background-color: #640fc5;
-}
-
-.hero {
-	div {
-		button {
-			&:first-child {
-				background-color: #0e6cff;
-			}
-			&:nth-child(2) {
-				background-color: #ff8700;
-			}
-			&:last-child {
-				background-color: #4caf50;
-			}
-		}
-	}
 }

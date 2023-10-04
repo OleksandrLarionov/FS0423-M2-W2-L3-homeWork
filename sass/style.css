@@ -16,121 +16,103 @@ button {
   padding: 0;
 }
 
-body {
-  color: #f4f4f4;
-}
-
 .hero {
   background-color: #640fc5;
 }
 
-.hero div button:first-child {
-  background-color: #0e6cff;
-}
-.hero div button:nth-child(2) {
-  background-color: #ff8700;
-}
-.hero div button:last-child {
-  background-color: #4caf50;
-}
-
-body {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.margin-line-sm {
+.ml-sm {
   margin: 0 5px 0 5px;
 }
 
-.margin-line-sm {
+.mb-sm {
   margin: 5px;
 }
 
-.padding-block-sm {
+.pb-sm {
   padding: 5px;
 }
 
-.padding-line-sm {
+.pl-sm {
   padding: 0 5px 0 5px;
 }
 
-.margin-line-normal {
+.ml-normal {
   margin: 0 15px 0 15px;
 }
 
-.margin-line-normal {
+.mb-normal {
   margin: 15px;
 }
 
-.padding-block-normal {
+.pb-normal {
   padding: 15px;
 }
 
-.padding-line-normal {
+.pl-normal {
   padding: 0 15px 0 15px;
 }
 
-.margin-line-md {
+.ml-md {
   margin: 0 30px 0 30px;
 }
 
-.margin-line-md {
+.mb-md {
   margin: 30px;
 }
 
-.padding-block-md {
+.pb-md {
   padding: 30px;
 }
 
-.padding-line-md {
+.pl-md {
   padding: 0 30px 0 30px;
 }
 
-.margin-line-lg {
+.ml-lg {
   margin: 0 40px 0 40px;
 }
 
-.margin-line-lg {
+.mb-lg {
   margin: 40px;
 }
 
-.padding-block-lg {
+.pb-lg {
   padding: 40px;
 }
 
-.padding-line-lg {
+.pl-lg {
   padding: 0 40px 0 40px;
 }
 
-.margin-line-xl {
+.ml-xl {
   margin: 0 50px 0 50px;
 }
 
-.margin-line-xl {
+.mb-xl {
   margin: 50px;
 }
 
-.padding-block-xl {
+.pb-xl {
   padding: 50px;
 }
 
-.padding-line-xl {
+.pl-xl {
   padding: 0 50px 0 50px;
 }
 
-.margin-line-xxl {
+.ml-xxl {
   margin: 0 60px 0 60px;
 }
 
-.margin-line-xxl {
+.mb-xxl {
   margin: 60px;
 }
 
-.padding-block-xxl {
+.pb-xxl {
   padding: 60px;
 }
 
-.padding-line-xxl {
+.pl-xxl {
   padding: 0 60px 0 60px;
 }
 
@@ -144,6 +126,13 @@ body {
 
 .my-color3 {
   color: #4caf50;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #000;
+  background-color: buttons-bg;
 }
 
 nav {
@@ -163,6 +152,7 @@ nav ul {
 }
 
 .hero {
+  background-color: brown;
   display: flex;
 }
 .hero div:nth-child(2) {
@@ -174,10 +164,6 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-.hero div:first-child {
-  width: 800px;
-  height: 350px;
 }
 .hero div img {
   width: 100%;

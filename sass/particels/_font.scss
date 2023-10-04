@@ -1,11 +1,7 @@
-body {
-  font-family: 'Times New Roman', Times, serif;
-}
+$font-default: "Times New Roman", Times, serif;
 
-
-
-$main-font-size: 30px;
-
-$footer-font-sice: 15px;
-$nav-font-sice: 20px;  
-
+$font-sizes: (
+	sm: 16px,
+	md: 24px,
+	lg: 32px,
+);

@@ -1,0 +1,26 @@
+.hero {
+	background-color: brown;
+	display: flex;
+	div:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		div {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+
+	div img {
+		width: 100%;
+	}
+}
+section {
+	display: flex;
+	justify-content: space-around;
+
+	div img {
+		width: 100%;
+	}
+}
